@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADRMARKETHUB</title>
+    <link rel="icon" href="ADR title logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+<!-- navbar -->
+    <div class="navbar">
+        <div class="nav-menu border">
+            <i class="fa-solid fa-bars"></i>
+            <div class="content">
+                <a href="">About</a>
+                <a href="">contact</a>
+                <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+        <div class="navbar-logo border">
+        </div>
+        <div class="nav-home border">
+            <a href="">
+            <i class="fa-solid fa-house"></i>
+            <p class="home">home</p>
+            </a>
+        </div>
+        
+        
+        <div class="searchbar">
+                <select class="select-ops">
+                    <option value="All">All</option>
+                </select>
+                <input type="text" placeholder="Search" class="search-input" >
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="nav-signin border">
+            <a href="registration.html">
+          <p><span style="font-size: 13px;">  Hello,signin  </span></p>
+          <p class="nav-second"> Accounts & List </p>
+        </a>
+        </div>
+        <div class="nav-return border">
+            <a href="">
+          <p><span style="font-size: 13px;">  Returns  </span></p>
+          <p class="nav-second"> & Orders </p>
+        </a>
+        </div>
+        <div class="nav-cart border">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-cart-shopping"></i>
+                Cart</button>
+            <div id="myDropdown" class="dropdown-content">
+              <!-- <p id="cart-1"></p> -->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- hero-section -->
+       <div class="hero-section">
+        <div class="hero-msg"><p>You are on ADRMARKETHUB. You can shop for millions of products with fast local delivery. <a href=""> Click here to Sign in</a> before shopping</p></div>
+       </div>
+<!-- Vegetable-section -->
+       <div class="vegetables-name"><h1><u>Vegetables</u></h1></div>
+       <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-img"></div>
+            <div class="box-desc"><p id="veg-1">Fresh Vegetables</p>
+                <div class="box-qty">
+                    <select id="quantity" onchange="box1(this.value)">
+                        <option>Quantity:</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box-price-btn">
+            <div class="price"><p id="">Rs.</p><p id="total1">300</p></div>
+            <button class="btn" onclick="additem1()">Buy Now</button>
+            </div>
+        </div>
+        <div class="box2 box">
+        <div class="box-img"></div>
+        <div class="box-desc"><p id="veg-2">Onions</p>
+            <div class="box-qty">
+                <select id="quantity" onchange="box2(this.value)">
+                    <option>Quantity:</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="box-price-btn">
+        <div class="price"><p id="">Rs.</p><p id="total2">150</p></div>
+        <button class="btn" onclick="additem2()">Buy Now</button>
+        </div>
+            
+        </div>
+        <div class="box3 box">
+            <div class="box-img"></div>
+        <div class="box-desc"><p id="veg-3">Radish</p>
+            <div class="box-qty">
+                <select id="quantity" onchange="box3(this.value)">
+                    <option>Quantity:</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="box-price-btn">
+        <div class="price"><p id="">Rs.</p><p id="total3">60</p></div>
+        <button class="btn" onclick="additem3()">Buy Now</button>
+        </div>
+            
+        </div>
+        <div class="box4 box">
+            <div class="box-img"></div>
+        <div class="box-desc"><p id="veg-4">Tomato</p>
+            <div class="box-qty">
+                <select id="quantity" onchange="box4(this.value)">
+                    <option>Quantity:</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="box-price-btn">
+        <div class="price"><p id="">Rs.</p><p id="total4">50</p></div>
+        <button class="btn" onclick="additem4()">Buy Now</button>
+        </div>
+            
+        </div>
+       </div>
+
+<!-- fruits seaction-->
+      <div class="vegetables-name"><h1><u>Fruits</u></h1></div>
+       <div class="shop-section">
+        <div class="box5 box">
+            <div class="box-img"></div>
+            <div class="box-desc"><p id="fruit-1">Apples</p>
+                <div class="box-qty">
+                    <select id="quantity" onchange="box5(this.value)">
+                        <option>Quantity:</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box-price-btn">
+            <div class="price"><p id="">Rs.</p><p id="total5">120</p></div>
+            <button class="btn" onclick="additem5()">Buy Now</button>
+            </div>
+        </div>
+        <div class="box6 box">
+        <div class="box-img"></div>
+        <div class="box-desc"><p id="fruit-2">Oranges</p>
+            <div class="box-qty">
+                <select id="quantity" onchange="box6(this.value)">
+                    <option>Quantity:</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="box-price-btn">
+        <div class="price"><p id="">Rs.</p><p id="total6">250</p></div>
+        <button class="btn" onclick="additem6()">Buy Now</button>
+        </div>
+            
+        </div>
+        <div class="box7 box">
+            <div class="box-img"></div>
+        <div class="box-desc"><p id="fruit-3">Kiwi</p>
+            <div class="box-qty">
+                <select id="quantity" onchange="box7(this.value)">
+                    <option>Quantity:</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="box-price-btn">
+        <div class="price"><p id="">Rs.</p><p id="total7">30</p></div>
+        <button class="btn" onclick="additem7()">Buy Now</button>
+        </div>
+            
+        </div>
+        <div class="box8 box">
+            <div class="box-img"></div>
+        <div class="box-desc"><p id="fruit-4">Watermelon</p>
+            <div class="box-qty">
+                <select id="quantity" onchange="box8(this.value)">
+                    <option>Quantity:</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="box-price-btn">
+        <div class="price"><p id="">Rs.</p><p id="total8">70</p></div>
+        <button class="btn" onclick="additem8()">Buy Now</button>
+        </div>
+        </div>
+       </div>
+       <script src="adr.js"></script>
+</body>
+
+    <footer>
+        <br>
+        <br>
+        <h3>
+            <div class="copyright">
+        Conditions of Use & Sale
+        Privacy Notice
+        Interest-Based Ads
+    </div>
+        © 1996-2023, ADRMARKETHUB.com, Inc. or its affiliates
+    </h3>
+    <br>
+    <br>
+    <h2>THANK YOU &hearts;</h2>
+    <div class="social-media">
+        <i class="fa-brands fa-facebook" style="padding: 5px;"></i>
+        <i class="fa-brands fa-instagram" style="padding: 5px;"></i>
+        <i class="fa-brands fa-twitter" style="padding: 5px;"></i>
+        <i class="fa-brands fa-google" style="padding: 5px;"></i>
+    </div>
+    </footer>
+
+</html>

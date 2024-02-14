@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**header**/
+.navbar
+{
+   height: 70px;
+   width:100%;
+   background-color: #0f1111;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   color: white;
+}
+.navbar-logo{
+   background-image: url("ADR logo.png");
+   background-size: cover;
+   height:50px;
+   width: 200px;
+   align-items: center;
+   margin-left: 0px;
+}
+.border{
+    border: 2PX solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+
+.nav-home a
+{
+ color: white;
+ font-size: 20px;
+ display: flex;
+ text-decoration: none;
+}
+.home 
+{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.searchbar
+{
+    display: flex;
+    height: 40px;
+    width: 620px;
+    justify-content: space-evenly;
+}
+.select-ops
+{
+    background-color: #f3f3f3;
+    width: 55px;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius:4px ;
+    border: none;
+}
+.search-input
+{
+    width:100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon
+{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #0f1111;
+    border: 1px solid white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:  white;
+}
+
+.nav-signin a
+{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-second
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-return a
+{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-cart i
+{
+    font-size: 25px;
+
+}
+.nav-cart
+{
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.dropdown-btn
+{
+   color: white;
+   background-color:  #0f1111;
+   border: none;
+}
+
+
+.nav-menu
+{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+.nav-menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    
+
+}
+.nav-menu .content
+{   display: none;
+    position: absolute;
+    background-color:#0f1111 ;
+    width: 200px;
+    height: fit-content;
+    box-shadow: 2px 2px 5px rgb(99, 99, 99);
+    left: 0px;
+    top: 70px;
+    text-align: center;
+}
+.nav-menu:hover .content
+{
+    display: block;
+    font-size: 20px;
+}
+
+/**hero**/
+
+.hero-section
+{
+    background-image: url("hero_section1.png");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg
+{
+    background-color: rgb(211, 204, 204);
+    color: #0f1111;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    width: 98%;
+
+}
+.hero-msg a{
+    color: #007185;
+    
+}
+
+.vegetables-name
+{
+    background-color:rgb(220, 170, 62);
+    color: beige;
+    padding: 25px;
+}
+.shop-section
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(220, 170, 62);
+    height: 500px;
+}
+.box
+{
+    border: 2px solid black;
+    height: 450px;
+    width: 23%;
+    background-color: white;
+}
+
+
+
+.shop-section .box-desc
+{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding-top:10px;
+    padding-left: 10px;
+    
+}
+
+.shop-section .box-price-btn
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.shop-section .btn
+{
+    font-size: 15px;
+    color: red;
+    padding: 10px 18px;
+    font-weight: 600;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.shop-section .btn:hover
+{
+    color: white;
+    background-color: red;
+
+}
+
+/**quantity**/
+
+.shop-section .box-desc
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-section .box-qty
+{
+   padding-right: 20px;
+}
+.shop-section .box1 .box-img
+{
+    background-image: url("box1.png");
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+}
+
+.shop-section .box2 .box-img
+{
+    background-image: url("box2.png");
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+}
+
+.shop-section .box3 .box-img
+{
+    background-image: url("box3.png");
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+}
+
+.shop-section .box4 .box-img
+{
+    background-image: url("box4.webp");
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+}
+.shop-section .box5 .box-img
+{
+    background-image: url("apple.webp");
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+}
+.shop-section .box6 .box-img
+{
+    background-image: url("oranges.webp");
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+}
+.shop-section .box7 .box-img
+{
+    background-image: url("kiwi.webp");
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+}
+.shop-section .box8 .box-img
+{
+    background-image: url("watermelon.webp");
+    background-size: cover;
+    margin: 20px;
+    height: 300px;
+}
+
+.price 
+{
+    display: flex;
+}
+
+/* dropdown for cart */
+
+.dropbtn {
+    background-color: #0f1111;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    background-color: #f1f1f1;
+    height: 500px;
+    width: 250px;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  /* remove button */
+
+  .totalbtn
+  {
+    
+    font-size: 15px;
+    color: red;
+    padding: 10px 18px;
+    font-weight: 600;
+    border: 1px solid red;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  .totalbtn:hover
+  {
+    color: white;
+    background-color: red;
+  }
+  
+  /* #totalitems
+  {
+    background-color: #0f1111;
+    color: #f1f1f1;
+  }
+   */
+
+/* footer */
+footer{
+    color: white;
+    height: 200px;
+    width: 100%;
+    position:relative;
+    bottom: 0px;
+    background-color: #232F3E;
+    text-align: center;
+}
+
+.social-media 
+{
+   padding: 10px;
+    
+}

@@ -1,0 +1,34 @@
+
+body{
+    background-color:black;
+    
+}
+
+.background
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 200px;
+}
+
+.background-img
+{
+    margin-top: 80px;
+}
+
+
+.reg-box{
+    width: 250px;
+    border: solid rgb(199, 197, 197);
+    border-style:solid ; 
+    margin-top: 150px ;      
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 40px;
+    background-color:white ;
+    background-origin: padding-box;
+    box-shadow: inset;
+}
