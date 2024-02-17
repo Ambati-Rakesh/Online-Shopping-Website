@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+<div class="background">
+     <div class="background-img">
+      <img src="ADR logo.png" alt="apna dukan" >
+      </div>
+    <div class="reg-box">
+        <h3>
+            <center><u>Create Account</u></center>
+        </h3>
+        <form action="index.html" name="reg" onsubmit="sub()">
+            <label name="username"><b>Your name</b></label>
+            <br>
+            <input type="text" id="username" placeholder="Enter first name and last name" size="27">
+            <br>
+            <br>
+            <label name="Mobile Number"><b>Mobile Number</b></label>
+            <br>
+            <input type="text" value="+91" size="1"> <input type="text" placeholder="Enter mobile number" id="mobile" onblur="mobilevalidation()">
+            <br>
+            <br>
+            <label for="email"><b>Email(optional)</b></label>
+            <br>
+            <input type="text" placeholder="Enter email" id="email" size="27" onblur="emailvalidation()">
+            <br>
+            <br>
+            <label for="password"><b>Password</b></label>
+            <br>
+            <input type="password" id="password" placeholder="Enter Password" size="27" onblur="passwordvalidation()">
+            <br>
+            <b style="font-size: 10px;">Password must be at least 6 characters</b>
+            <br>
+            <br>
+           <center> <input type="submit" value="Continue" ></center>
+           <hr>
+           Already have an account: <a href="login.html">Sign in</a>
+        </form>
+     </div>
+</div>
+    <!-- script -->
+    <script>
+        function mobilevalidation()
+        {
+            var x=document.getElementById("mobile").value;
+            if(x.length!=10)
+           {
+            alert("Phone number must have 10 digits");
+           }
+        }
+        function passwordvalidation()
+        {
+            var y=document.getElementById("password").value;
+            if(y.length<6)
+            {
+                alert("Password must be at least 6 characters");
+            }
+        }
+        function emailvalidation()
+        {
+            var e=document.getElementById("email").value;
+            count=0;
+            let i;
+            for(i=0;i<e.length;i++)
+            {
+                if(e[i]=='@')
+                {
+                    count++;
+                }
+            }
+            if(count==0)
+            {
+                alert("email not valid");
+            }
+        }
+        function sub()
+        {
+            alert("Successfully Registered");
+        }
+    </script>
+</body>
+</html>

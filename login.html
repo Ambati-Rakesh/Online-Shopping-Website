@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+     <div class="background-img">
+        <img src="ADR logo.png" alt="logo" >
+    </div>
+        
+    <div class="login-form">
+        <div class="login">
+            <center><h1>Login</h1></center>
+            
+            <br>
+            <form action="">
+                <label for="">Username:</label>
+                <input type="text" placeholder="Enter Username">
+            <br>
+            <br>
+            <div class="pass">
+                <label for="">Password:</label>
+                <input type="password" placeholder="Enter password" id="pass">
+                <a class="password-hide" onclick="passwordvisible()"><i class="fa-regular fa-eye"></i></a>
+                
+            </div>
+            <br>
+            <br>
+                <center><input type="submit" value="login" class="btn"></center>
+        </div>
+           
+    </div>
+    
+    </div>
+    <script>
+        function passwordvisible()
+        {
+            var x=document.getElementById("pass");
+            if(x.type=="password")
+            {
+                x.type="text";
+            }
+            else{
+                x.type="password";
+            }
+
+        }
+    </script>
+</body>
+</html>
